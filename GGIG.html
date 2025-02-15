@@ -9,65 +9,85 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
-            background-color: #f0f2f5;
+            color: #083358; /* Dunkles Blau für Text */
+            background-color: #f0f8ff; /* AliceBlue als Hintergrundfarbe */
         }
         header {
             background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/65/Glacier_front_in_Greenland.jpg');
             background-size: cover;
             background-position: center;
-            color: #fff;
+            color: #ffffff;
             padding: 150px 0;
             text-align: center;
+            background-blend-mode: overlay;
+            background-color: rgba(0, 102, 153, 0.5); /* Blauer Overlay für frostigen Effekt */
         }
         header h1 {
             font-size: 60px;
             margin: 0;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+            text-shadow: 2px 2px 6px rgba(0, 51, 102, 0.7);
+            color: #e0f7fa; /* Helles Blau für Überschrift */
         }
         nav {
-            background-color: #2c3e50;
+            background-color: #006994; /* Dunkles Blau */
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
         }
         nav a {
-            color: #ecf0f1;
+            color: #e0f7fa; /* Helles Blau */
             padding: 14px 20px;
             text-decoration: none;
             font-size: 18px;
         }
         nav a:hover {
-            background-color: #34495e;
+            background-color: #005277; /* Etwas dunkleres Blau beim Hover */
         }
         section {
             padding: 60px 80px;
             max-width: 1200px;
             margin: 0 auto;
+            background-color: #ffffff; /* Weißer Hintergrund für Kontrast */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 102, 153, 0.1);
+            margin-top: 40px;
         }
         section h2 {
             font-size: 36px;
             margin-bottom: 30px;
             text-align: center;
-            color: #2c3e50;
+            color: #006994; /* Dunkles Blau */
         }
         section p {
             font-size: 18px;
             line-height: 1.8;
             margin-bottom: 20px;
             text-align: justify;
+            color: #083358; /* Dunkles Blau */
         }
         section img {
             max-width: 100%;
             height: auto;
             border-radius: 10px;
             margin: 30px 0;
+            box-shadow: 0 0 10px rgba(0, 102, 153, 0.2);
         }
         footer {
-            background-color: #2c3e50;
-            color: #ecf0f1;
+            background-color: #004466; /* Tiefes Blau für Footer */
+            color: #e0f7fa;
             padding: 40px 80px;
             text-align: center;
+        }
+        footer h2 {
+            color: #e0f7fa;
+            margin-bottom: 20px;
+        }
+        footer a {
+            color: #e0f7fa;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
         footer p {
             margin: 5px 0;
@@ -80,6 +100,7 @@
             }
             section {
                 padding: 40px 20px;
+                margin-top: 20px;
             }
             nav a {
                 padding: 12px 10px;
@@ -210,13 +231,13 @@
         </p>
         <p>
             Telefon: +45 123 4567<br>
-            E-Mail: <a href="mailto:info@polarforschung.dk" style="color: #ecf0f1;">info@polarforschung.dk</a>
+            E-Mail: <a href="mailto:info@polarforschung.dk">info@polarforschung.dk</a>
         </p>
         <p>
             Folgen Sie uns auf sozialen Medien:<br>
-            <a href="#" style="color: #ecf0f1; text-decoration: none;">Facebook</a> |
-            <a href="#" style="color: #ecf0f1; text-decoration: none;">Twitter</a> |
-            <a href="#" style="color: #ecf0f1; text-decoration: none;">Instagram</a>
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
         </p>
     </footer>
 
