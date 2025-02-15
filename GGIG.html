@@ -2,121 +2,134 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Gletscher-Abenteuer</title>
+    <title>Gletscherdynamik in Grönland</title>
     <style>
-        /* Allgemeine Seitenstilistik */
+        /* Grundlegende Stile für die Webseite */
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9e/Glacier_in_Nepal.jpg'); /* Hintergrundbild eines Gletschers */
+            color: #333;
+        }
+        header {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9e/Glacier_in_Nepal.jpg'); /* Beispielbild, bitte mit eigenem Bild ersetzen */
             background-size: cover;
             background-position: center;
             color: #fff;
+            padding: 100px 0;
             text-align: center;
         }
-
-        /* Stil für das Login-Formular */
-        #loginForm {
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 40px;
-            margin: 100px auto;
-            display: inline-block;
-            border-radius: 10px;
+        header h1 {
+            font-size: 50px;
+            margin: 0;
         }
-
-        input[type="password"] {
-            padding: 10px;
-            width: 200px;
-            border: none;
-            border-radius: 5px;
+        nav {
+            background-color: #2c3e50;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #34495e;
+        }
+        section {
+            padding: 60px 80px;
+        }
+        section h2 {
+            font-size: 36px;
             margin-bottom: 20px;
         }
-
-        input[type="submit"] {
-            padding: 10px 20px;
-            border: none;
-            background-color: #2980b9;
-            color: #fff;
-            border-radius: 5px;
-            cursor: pointer;
+        section p {
+            font-size: 18px;
+            line-height: 1.6;
         }
-
-        /* Stil für den Inhalt nach dem Login */
-        #content {
-            display: none; /* Inhalt bleibt versteckt, bis das richtige Passwort eingegeben wird */
-            padding: 20px;
+        footer {
+            background-color: #bdc3c7;
+            padding: 20px 80px;
+            text-align: center;
         }
-
-        #content img {
-            max-width: 80%;
-            height: auto;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-
         /* Responsive Design für mobile Geräte */
-        @media (max-width: 600px) {
-            #loginForm, #content {
-                width: 90%;
-                margin: 50px auto;
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 36px;
+            }
+            section {
+                padding: 40px 20px;
+            }
+            nav a {
+                float: none;
+                width: 100%;
             }
         }
     </style>
-    <script>
-        function checkPassword(event) {
-            event.preventDefault(); // Verhindert das Neuladen der Seite beim Absenden des Formulars
-            var passwordInput = document.getElementById('password').value;
-            if (passwordInput === '123') {
-                document.getElementById('loginForm').style.display = 'none'; // Versteckt das Login-Formular
-                document.getElementById('content').style.display = 'block';  // Zeigt den geheimen Inhalt an
-            } else {
-                alert('Falsches Passwort! Bitte versuche es erneut.');
-            }
-        }
-    </script>
 </head>
 <body>
-    <!-- Login-Formular -->
-    <div id="loginForm">
-        <h1>Willkommen zum Gletscher-Abenteuer!</h1>
-        <p>Bitte gib das Passwort ein, um die Reise zu beginnen.</p>
-        <form onsubmit="checkPassword(event)">
-            <input type="password" id="password" placeholder="Passwort eingeben"><br>
-            <input type="submit" value="Login">
-        </form>
-    </div>
 
-    <!-- Geheimer Inhalt -->
-    <div id="content">
-        <!-- Überschrift und Einleitung -->
-        <h2>Die geheime Welt der Gletscher</h2>
-        <p>Herzlichen Glückwunsch! Du hast Zugang zur geheimen Gletscherwelt erhalten.</p>
-        <!-- Hier kannst du deinen eigenen Text einfügen -->
-        <!-- START Eigenen Text einfügen -->
-        <p>Entdecke faszinierende Geschichten über die mächtigen Eismassen, die unsere Erde formen. Gletscher sind nicht nur atemberaubend schön, sondern auch Zeugnisse vergangener Zeiten.</p>
-        <!-- ENDE Eigenen Text einfügen -->
+    <!-- Kopfbereich mit Titelbild -->
+    <header>
+        <h1>Gletscherdynamik in Grönland</h1>
+    </header>
 
-        <!-- Erstes Gletscherbild -->
-        <img src="https://example.com/gletscher1.jpg" alt="Majestätischer Gletscher">
-        <!-- Bildbeschreibung oder zusätzlicher Text -->
-        <p>Ein imposanter Gletscher unter klarem Himmel.</p>
+    <!-- Navigationsleiste -->
+    <nav>
+        <a href="#allgemein">Allgemeines</a>
+        <a href="#bewegung">Bewegung</a>
+        <a href="#klima">Klima</a>
+        <a href="#gefahren">Gefahren</a>
+    </nav>
 
-        <!-- Zweites Gletscherbild -->
-        <img src="https://example.com/gletscher2.jpg" alt="Gletscherlandschaft bei Sonnenaufgang">
-        <!-- Bildbeschreibung oder zusätzlicher Text -->
-        <p>Die ersten Sonnenstrahlen tauchen den Gletscher in goldenes Licht.</p>
+    <!-- Abschnitt: Allgemeines -->
+    <section id="allgemein">
+        <h2>Allgemeines</h2>
+        <p>
+            Grönland, die größte Insel der Welt, ist bekannt für seine mächtigen Gletscher und das ewige Eis. Diese Gletscher spielen eine entscheidende Rolle im globalen Klimasystem und beeinflussen Meeresspiegel und Wetterphänomene.
+            <!-- Hier kannst du weitere allgemeine Informationen hinzufügen -->
+        </p>
+    </section>
 
-        <!-- Weiterer Inhalt -->
-        <!-- START Weiteren Text einfügen -->
-        <h3>Die Bedeutung der Gletscher</h3>
-        <p>Gletscher speichern den größten Teil des Süßwassers auf unserem Planeten und spielen eine entscheidende Rolle im globalen Klima. Ihre Bewegung und Veränderung verraten uns viel über den Zustand unserer Erde.</p>
-        <!-- ENDE Weiteren Text einfügen -->
+    <!-- Abschnitt: Bewegung -->
+    <section id="bewegung">
+        <h2>Bewegung</h2>
+        <p>
+            Die Gletscher Grönlands sind ständig in Bewegung. Sie fließen aufgrund der Schwerkraft von den zentralen Eiskappen hin zu den Küsten. Diese Bewegung beeinflusst die Landschaft und transportiert große Mengen an Eis ins Meer.
+            <!-- Füge hier Informationen über Fließgeschwindigkeiten und Faktoren ein -->
+        </p>
+    </section>
 
-        <!-- Drittes Gletscherbild -->
-        <img src="https://example.com/gletscher3.jpg" alt="Eisformationen">
-        <!-- Bildbeschreibung oder zusätzlicher Text -->
-        <p>Ein Blick auf die faszinierenden Eisformationen im Inneren eines Gletschers.</p>
-    </div>
+    <!-- Abschnitt: Klima -->
+    <section id="klima">
+        <h2>Klima</h2>
+        <p>
+            Das Klima hat einen erheblichen Einfluss auf die Gletscherdynamik. Steigende Temperaturen führen zu verstärktem Schmelzen, während Niederschläge das Wachstum der Gletscher fördern können. Der Klimawandel beschleunigt aktuell das Abschmelzen des grönländischen Eisschildes.
+            <!-- Zusätzliche Details über Klimamodelle und Prognosen -->
+        </p>
+    </section>
+
+    <!-- Abschnitt: Gefahren -->
+    <section id="gefahren">
+        <h2>Gefahren</h2>
+        <p>
+            Die beschleunigte Gletscherschmelze kann zu globalen Problemen führen, darunter der Anstieg des Meeresspiegels und Veränderungen der Meeresströmungen. Dies birgt Risiken für Küstenregionen weltweit und kann extreme Wetterereignisse begünstigen.
+            <!-- Informationen über potenzielle globale Auswirkungen und Schutzmaßnahmen -->
+        </p>
+    </section>
+
+    <!-- Fußbereich mit Kontaktdaten -->
+    <footer>
+        <p><strong>Kontaktinformationen:</strong></p>
+        <p>
+            Institut für Polar- und Meeresforschung<br>
+            Polarforscherstraße 1, 12345 Eisstadt<br>
+            Telefon: +49 123 4567890<br>
+            E-Mail: info@polarforschung.de
+        </p>
+    </footer>
+
 </body>
 </html>
