@@ -1,0 +1,92 @@
+<DOCTYPE! html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Gletscher Login</title>
+    <style>
+        /* Seitenstil */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('gletscher-hintergrund.jpg'); /* Hintergrundbild hinzufügen */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Login-Formularstil */
+        #loginForm {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            margin: 100px auto;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        input[type="password"] {
+            padding: 10px;
+            width: 200px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            background-color: #2980b9;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Inhalt nach dem Login */
+        #content {
+            display: none; /* Inhalt verstecken, bis das richtige Passwort eingegeben wird */
+            padding: 20px;
+        }
+
+        #content img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function checkPassword(event) {
+            event.preventDefault(); // Verhindert das Neuladen der Seite beim Absenden des Formulars
+            var passwordInput = document.getElementById('password').value;
+            if (passwordInput === '123') {
+                document.getElementById('loginForm').style.display = 'none'; // Versteckt das Login-Formular
+                document.getElementById('content').style.display = 'block';  // Zeigt den geheimen Inhalt an
+            } else {
+                alert('Falsches Passwort! Bitte versuche es erneut.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Login-Formular -->
+    <div id="loginForm">
+        <h1>Willkommen!</h1>
+        <p>Bitte gib das Passwort ein, um fortzufahren.</p>
+        <form onsubmit="checkPassword(event)">
+            <input type="password" id="password" placeholder="Passwort"><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <!-- Geheimer Inhalt -->
+    <div id="content">
+        <!-- Hier kannst du deinen Text eingeben -->
+        <h2>Geheime Gletscherwelt</h2>
+        <p>Du hast erfolgreich Zugang zur geheimen Gletscherwelt erhalten!</p>
+        <!-- Gletscherbild einfügen -->
+        <img src="gletscher1.jpg" alt="Gletscher">
+        <!-- Weiterer Text oder Bilder können hier hinzugefügt werden -->
+    </div>
+</body>
+</html>
