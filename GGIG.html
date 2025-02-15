@@ -10,49 +10,67 @@
             margin: 0;
             padding: 0;
             color: #333;
+            background-color: #f0f2f5;
         }
         header {
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9e/Glacier_in_Nepal.jpg'); /* Beispielbild, bitte mit eigenem Bild ersetzen */
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Greenland_glacier_front_20070815_gh.jpg/1280px-Greenland_glacier_front_20070815_gh.jpg');
             background-size: cover;
             background-position: center;
             color: #fff;
-            padding: 100px 0;
+            padding: 120px 0;
             text-align: center;
         }
         header h1 {
             font-size: 50px;
             margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         nav {
             background-color: #2c3e50;
-            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         nav a {
-            float: left;
-            display: block;
             color: #ecf0f1;
-            text-align: center;
-            padding: 14px 16px;
+            padding: 14px 20px;
             text-decoration: none;
+            font-size: 18px;
         }
         nav a:hover {
             background-color: #34495e;
         }
         section {
             padding: 60px 80px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         section h2 {
             font-size: 36px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #2c3e50;
         }
         section p {
             font-size: 18px;
-            line-height: 1.6;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 30px 0;
         }
         footer {
-            background-color: #bdc3c7;
-            padding: 20px 80px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 40px 80px;
             text-align: center;
+        }
+        footer p {
+            margin: 5px 0;
+            font-size: 16px;
         }
         /* Responsive Design für mobile Geräte */
         @media (max-width: 768px) {
@@ -63,8 +81,8 @@
                 padding: 40px 20px;
             }
             nav a {
-                float: none;
-                width: 100%;
+                padding: 12px 10px;
+                font-size: 16px;
             }
         }
     </style>
@@ -82,23 +100,35 @@
         <a href="#bewegung">Bewegung</a>
         <a href="#klima">Klima</a>
         <a href="#gefahren">Gefahren</a>
+        <a href="#kontakt">Kontakt</a>
     </nav>
 
     <!-- Abschnitt: Allgemeines -->
     <section id="allgemein">
         <h2>Allgemeines</h2>
         <p>
-            Grönland, die größte Insel der Welt, ist bekannt für seine mächtigen Gletscher und das ewige Eis. Diese Gletscher spielen eine entscheidende Rolle im globalen Klimasystem und beeinflussen Meeresspiegel und Wetterphänomene.
-            <!-- Hier kannst du weitere allgemeine Informationen hinzufügen -->
+            Grönland, die größte Insel der Welt, ist für ihre beeindruckenden Eismassen bekannt. Über 80% der Landesfläche sind von einem Eisschild bedeckt, der bis zu 3.000 Meter dick sein kann. Dieses Eisschild ist nach der Antarktis der zweitgrößte der Erde und spielt eine entscheidende Rolle für das globale Klima und den Meeresspiegel.
         </p>
+        <p>
+            Die Gletscher Grönlands sind nicht nur atemberaubend schön, sondern auch von großer wissenschaftlicher Bedeutung. Sie bieten Einblicke in klimatische Veränderungen und sind wichtige Indikatoren für die Auswirkungen des globalen Klimawandels.
+        </p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Icebergs_in_the_Disku_bay_%28Ilulissat%29%2C_Greenland.jpg/1280px-Icebergs_in_the_Disku_bay_%28Ilulissat%29%2C_Greenland.jpg" alt="Eisberge in der Diskobucht, Grönland">
+        <p style="text-align: center; font-style: italic;">Eisberge in der Diskobucht, Grönland</p>
     </section>
 
     <!-- Abschnitt: Bewegung -->
     <section id="bewegung">
         <h2>Bewegung</h2>
         <p>
-            Die Gletscher Grönlands sind ständig in Bewegung. Sie fließen aufgrund der Schwerkraft von den zentralen Eiskappen hin zu den Küsten. Diese Bewegung beeinflusst die Landschaft und transportiert große Mengen an Eis ins Meer.
-            <!-- Füge hier Informationen über Fließgeschwindigkeiten und Faktoren ein -->
+            Gletscher sind nicht statisch; sie befinden sich in ständiger Bewegung. Diese Bewegung wird durch die Schwerkraft und den Druck des überliegenden Eises verursacht. In Grönland fließen die Gletscher vom Landesinneren zu den Küsten, wo sie oft in großen Gletscherzungen enden, die ins Meer kalben.
+        </p>
+        <p>
+            Die Geschwindigkeit der Gletscherbewegung kann variieren. Einige Gletscher bewegen sich nur wenige Meter pro Jahr, während andere mehrere Kilometer pro Jahr zurücklegen können. Faktoren wie die Eisdicke, Topografie des Untergrunds, interne Eistemperatur und die Menge an Schmelzwasser beeinflussen die Fließgeschwindigkeit.
+        </p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Calving_glacier_in_Greenland.jpg/1280px-Calving_glacier_in_Greenland.jpg" alt="Kalbender Gletscher in Grönland">
+        <p style="text-align: center; font-style: italic;">Ein kalbender Gletscher, bei dem Eisbrocken ins Meer abbrechen</p>
+        <p>
+            Die dynamische Natur der Gletscher hat erhebliche Auswirkungen auf die globale Umwelt. Wenn Gletscher schneller fließen und mehr Eis ins Meer abgeben, kann dies zu einem Anstieg des Meeresspiegels führen.
         </p>
     </section>
 
@@ -106,8 +136,15 @@
     <section id="klima">
         <h2>Klima</h2>
         <p>
-            Das Klima hat einen erheblichen Einfluss auf die Gletscherdynamik. Steigende Temperaturen führen zu verstärktem Schmelzen, während Niederschläge das Wachstum der Gletscher fördern können. Der Klimawandel beschleunigt aktuell das Abschmelzen des grönländischen Eisschildes.
-            <!-- Zusätzliche Details über Klimamodelle und Prognosen -->
+            Das Klima Grönlands ist von extremen Bedingungen geprägt. Kalte arktische Temperaturen und niedrige Niederschläge schaffen eine Umgebung, in der sich Eis über Jahrtausende ansammeln kann. Doch in den letzten Jahrzehnten wurden deutliche Veränderungen beobachtet.
+        </p>
+        <p>
+            Durch den globalen Temperaturanstieg schmilzt die Oberfläche des grönländischen Eisschildes zunehmend. Satellitendaten zeigen, dass die Eisschmelze jährlich zunimmt und einen wesentlichen Beitrag zum globalen Meeresspiegelanstieg leistet. Zudem führen höhere Temperaturen zu mehr Schmelzwasser, das in tieferen Schichten das Gleiten des Eises erleichtert und so die Fließgeschwindigkeit erhöht.
+        </p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Helheim_Glacier%2C_East_Greenland%2C_ESA224242.jpg/1280px-Helheim_Glacier%2C_East_Greenland%2C_ESA224242.jpg" alt="Helheim-Gletscher in Ostgrönland">
+        <p style="text-align: center; font-style: italic;">Der Helheim-Gletscher zeigt deutliche Anzeichen von Rückzug aufgrund steigender Temperaturen</p>
+        <p>
+            Klimamodelle prognostizieren, dass sich diese Trends fortsetzen oder sogar beschleunigen werden, wenn keine effektiven Maßnahmen gegen den Klimawandel ergriffen werden.
         </p>
     </section>
 
@@ -115,19 +152,36 @@
     <section id="gefahren">
         <h2>Gefahren</h2>
         <p>
-            Die beschleunigte Gletscherschmelze kann zu globalen Problemen führen, darunter der Anstieg des Meeresspiegels und Veränderungen der Meeresströmungen. Dies birgt Risiken für Küstenregionen weltweit und kann extreme Wetterereignisse begünstigen.
-            <!-- Informationen über potenzielle globale Auswirkungen und Schutzmaßnahmen -->
+            Die beschleunigte Gletscherschmelze in Grönland birgt globale Gefahren. Der Anstieg des Meeresspiegels bedroht tiefliegende Küstenregionen und Inselstaaten weltweit. Städte wie New York, Amsterdam oder Bangkok könnten in den kommenden Jahrzehnten verstärkt von Überschwemmungen betroffen sein.
+        </p>
+        <p>
+            Darüber hinaus kann die Süßwassereinleitung in den Nordatlantik die Meeresströmungen, insbesondere den Golfstrom, beeinflussen. Eine Veränderung dieser Strömungen könnte zu drastischen klimatischen Veränderungen in Europa und Nordamerika führen.
+        </p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Greenland_icemelt_2007_denoised.gif/800px-Greenland_icemelt_2007_denoised.gif" alt="Schmelzprozess des grönländischen Eisschildes">
+        <p style="text-align: center; font-style: italic;">Animation des Schmelzprozesses des grönländischen Eisschildes über mehrere Jahre</p>
+        <p>
+            Lokale Gemeinschaften in Grönland sind ebenfalls betroffen. Veränderungen im Eis beeinflussen traditionelle Lebensweisen, Jagdmöglichkeiten und die Infrastruktur.
         </p>
     </section>
 
     <!-- Fußbereich mit Kontaktdaten -->
-    <footer>
-        <p><strong>Kontaktinformationen:</strong></p>
+    <footer id="kontakt">
+        <h2>Kontakt</h2>
         <p>
-            Institut für Polar- und Meeresforschung<br>
-            Polarforscherstraße 1, 12345 Eisstadt<br>
-            Telefon: +49 123 4567890<br>
-            E-Mail: info@polarforschung.de
+            <strong>Institut für Polarforschung und Klimawissenschaften</strong><br>
+            Arktisweg 15, 12345 Kopenhagen<br>
+            Dänemark
+        </p>
+        <p>
+            Telefon: +45 123 4567<br>
+            E-Mail: info@polarforschung.dk
+        </p>
+        <p>
+            Folgen Sie uns auf sozialen Medien:<br>
+            <!-- Links zu sozialen Medien (Platzhalter) -->
+            <a href="#" style="color: #ecf0f1; text-decoration: none;">Facebook</a> |
+            <a href="#" style="color: #ecf0f1; text-decoration: none;">Twitter</a> |
+            <a href="#" style="color: #ecf0f1; text-decoration: none;">Instagram</a>
         </p>
     </footer>
 
