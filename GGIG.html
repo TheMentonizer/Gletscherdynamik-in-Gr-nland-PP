@@ -1,22 +1,22 @@
-<DOCTYPE! html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Gletscher Login</title>
+    <title>Gletscher-Abenteuer</title>
     <style>
-        /* Seitenstil */
+        /* Allgemeine Seitenstilistik */
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-image: url('gletscher-hintergrund.jpg'); /* Hintergrundbild hinzufügen */
+            background-image: url('https://example.com/gletscher-hintergrund.jpg'); /* Hintergrundbild eines Gletschers */
             background-size: cover;
             background-position: center;
             color: #fff;
             text-align: center;
         }
 
-        /* Login-Formularstil */
+        /* Stil für das Login-Formular */
         #loginForm {
             background-color: rgba(0, 0, 0, 0.6);
             padding: 40px;
@@ -42,9 +42,9 @@
             cursor: pointer;
         }
 
-        /* Inhalt nach dem Login */
+        /* Stil für den Inhalt nach dem Login */
         #content {
-            display: none; /* Inhalt verstecken, bis das richtige Passwort eingegeben wird */
+            display: none; /* Inhalt bleibt versteckt, bis das richtige Passwort eingegeben wird */
             padding: 20px;
         }
 
@@ -53,6 +53,14 @@
             height: auto;
             border-radius: 10px;
             margin-top: 20px;
+        }
+
+        /* Responsive Design für mobile Geräte */
+        @media (max-width: 600px) {
+            #loginForm, #content {
+                width: 90%;
+                margin: 50px auto;
+            }
         }
     </style>
     <script>
@@ -71,22 +79,44 @@
 <body>
     <!-- Login-Formular -->
     <div id="loginForm">
-        <h1>Willkommen!</h1>
-        <p>Bitte gib das Passwort ein, um fortzufahren.</p>
+        <h1>Willkommen zum Gletscher-Abenteuer!</h1>
+        <p>Bitte gib das Passwort ein, um die Reise zu beginnen.</p>
         <form onsubmit="checkPassword(event)">
-            <input type="password" id="password" placeholder="Passwort"><br>
+            <input type="password" id="password" placeholder="Passwort eingeben"><br>
             <input type="submit" value="Login">
         </form>
     </div>
 
     <!-- Geheimer Inhalt -->
     <div id="content">
-        <!-- Hier kannst du deinen Text eingeben -->
-        <h2>Geheime Gletscherwelt</h2>
-        <p>Du hast erfolgreich Zugang zur geheimen Gletscherwelt erhalten!</p>
-        <!-- Gletscherbild einfügen -->
-        <img src="gletscher1.jpg" alt="Gletscher">
-        <!-- Weiterer Text oder Bilder können hier hinzugefügt werden -->
+        <!-- Überschrift und Einleitung -->
+        <h2>Die geheime Welt der Gletscher</h2>
+        <p>Herzlichen Glückwunsch! Du hast Zugang zur geheimen Gletscherwelt erhalten.</p>
+        <!-- Hier kannst du deinen eigenen Text einfügen -->
+        <!-- START Eigenen Text einfügen -->
+        <p>Entdecke faszinierende Geschichten über die mächtigen Eismassen, die unsere Erde formen. Gletscher sind nicht nur atemberaubend schön, sondern auch Zeugnisse vergangener Zeiten.</p>
+        <!-- ENDE Eigenen Text einfügen -->
+
+        <!-- Erstes Gletscherbild -->
+        <img src="https://example.com/gletscher1.jpg" alt="Majestätischer Gletscher">
+        <!-- Bildbeschreibung oder zusätzlicher Text -->
+        <p>Ein imposanter Gletscher unter klarem Himmel.</p>
+
+        <!-- Zweites Gletscherbild -->
+        <img src="https://example.com/gletscher2.jpg" alt="Gletscherlandschaft bei Sonnenaufgang">
+        <!-- Bildbeschreibung oder zusätzlicher Text -->
+        <p>Die ersten Sonnenstrahlen tauchen den Gletscher in goldenes Licht.</p>
+
+        <!-- Weiterer Inhalt -->
+        <!-- START Weiteren Text einfügen -->
+        <h3>Die Bedeutung der Gletscher</h3>
+        <p>Gletscher speichern den größten Teil des Süßwassers auf unserem Planeten und spielen eine entscheidende Rolle im globalen Klima. Ihre Bewegung und Veränderung verraten uns viel über den Zustand unserer Erde.</p>
+        <!-- ENDE Weiteren Text einfügen -->
+
+        <!-- Drittes Gletscherbild -->
+        <img src="https://example.com/gletscher3.jpg" alt="Eisformationen">
+        <!-- Bildbeschreibung oder zusätzlicher Text -->
+        <p>Ein Blick auf die faszinierenden Eisformationen im Inneren eines Gletschers.</p>
     </div>
 </body>
 </html>
